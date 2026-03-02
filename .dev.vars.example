@@ -1,0 +1,5 @@
+# Variables para desarrollo local con Wrangler
+# Copia esto a .dev.vars (nunca subas .dev.vars a git)
+
+# Genera uno con: node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
+JWT_SECRET=pon_aqui_un_string_aleatorio_de_minimo_32_caracteres

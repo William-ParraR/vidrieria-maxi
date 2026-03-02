@@ -1,0 +1,14 @@
+name                   = "vidrieria-maxi"
+pages_build_output_dir = "dist"
+compatibility_date     = "2024-09-23"
+
+# Base de datos D1 (Cloudflare SQLite administrado)
+# database_id se completa después de ejecutar: wrangler d1 create vidrieria-maxi-db
+[[d1_databases]]
+binding       = "DB"
+database_name = "vidrieria-maxi-db"
+database_id   = "bcb76638-2484-4631-8e77-9c3b03806e51"
+
+# Variables de entorno (las secretas se setean con: wrangler pages secret put JWT_SECRET)
+# [vars]
+# NODE_ENV = "production"

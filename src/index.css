@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Layout fijo full-height para el dashboard */
+html, body, #root {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Scrollbar más delgado */
+::-webkit-scrollbar       { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
+
+/* Animación de entrada para modales */
+@keyframes modalIn {
+  from { opacity: 0; transform: translateY(-12px) scale(0.97); }
+  to   { opacity: 1; transform: none; }
+}
+.modal-enter { animation: modalIn 0.18s ease; }
+
+/* Toast de entrada */
+@keyframes toastIn {
+  from { opacity: 0; transform: translateX(20px); }
+  to   { opacity: 1; transform: none; }
+}
+.toast-enter { animation: toastIn 0.22s ease; }
